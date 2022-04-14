@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from '../src/components/shared/styled/Global.js';
+import Header from './components/shared/Header.js';
+import { ThemeProvider } from 'styled-components';
+import Theme from './components/shared/Theme.js';
+import HomeHero from './components/home/HomeHero.js';
+import Collection from './components/home/Collection.js';
+import WhyUs from './components/home/WhyUs.js';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={Theme}>
+    <>
+    <GlobalStyles />
+      <Header />
+      <HomeHero />
+      <Collection />
+      <WhyUs />
+    </>
+    </ThemeProvider>
   );
 }
 
-export default App;
