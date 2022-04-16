@@ -36,6 +36,22 @@ export const StyledWhyUs = styled.div`
             width: 43rem;
             height: 31.25rem;
         }
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.largeDesktop}) {
+            width: 80rem;
+            height: 32.25rem;
+            gap: 2rem;
+            padding-top: 6.25rem;
+
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                max-width: 33.75rem;
+            }
+        }
+
     }
 
     .benefits-wrapper {
@@ -49,6 +65,11 @@ export const StyledWhyUs = styled.div`
         @media only screen and (min-width: ${({theme}) => theme.screen.tablet}) {
                 margin-top: -19rem;
             }
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.largeDesktop}) {
+            flex-direction: row;
+            margin-top: -13rem;
+        }
 
         .benefit {
             background-color: ${({theme}) => theme.color.cyan};
@@ -91,7 +112,19 @@ export const StyledWhyUs = styled.div`
                 }
 
                 .svg {
-                    
+                    width: 4.5rem;
+                }
+            }
+
+            @media only screen and (min-width: ${({theme}) => theme.screen.largeDesktop}) {
+                flex-direction: column;
+                width: 21.875rem;
+                height: 23.875rem;
+                text-align: center;
+
+                .text-wrapper {
+                    align-items: center;
+
                 }
             }
         }

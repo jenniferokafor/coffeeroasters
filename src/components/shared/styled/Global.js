@@ -54,12 +54,19 @@ table {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
+	
 }
 
 p, li, a {
     font-family: 'Barlow', sans-serif;
     font-size: 0.938rem;
     line-height: 1.563rem;
+	
+
+	@media only screen and (min-width: ${({theme}) => theme.screen.largeDesktop}) {
+		font-size: 1rem;
+		line-height: 1.625rem;
+	}
 }
 `
 

@@ -3,7 +3,7 @@ const Theme = {
         smallMobile: '25.875rem',
         tablet: '48rem',
         desktop: '64rem',
-        largeDesktop: '80rem',
+        largeDesktop: '82rem',
     },
 
     color: {
