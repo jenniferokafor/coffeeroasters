@@ -3,6 +3,9 @@ import mobileHeroImg from '../../../assets/home/mobile/image-hero-coffeepress.jp
 import tabHeroImg from '../../../assets/home/tablet/image-hero-coffeepress.jpg'
 import dskHeroImg from '../../../assets/home/desktop/image-hero-coffeepress.jpg'
 
+// about hero images
+import aboutMobileHeroImg from '../../../assets/about/mobile/image-hero-whitecup.jpg';
+
 export const StyledHero = styled.div`
     display: flex;
     flex-direction: column;
@@ -85,5 +88,13 @@ export const StyledHomeHero = styled(StyledHero)`
         button {
             margin-top: 0.938rem;
         }
+    }
+`
+
+// hero for other pages
+export const StyledOtherHero = styled(StyledHero)`
+    .bg-box {
+        height: 25rem;
+        background-image: url(${aboutMobileHeroImg});
     }
 `
