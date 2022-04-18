@@ -1,10 +1,17 @@
 import styled from 'styled-components';
+
+// desktop hero images
 import mobileHeroImg from '../../../assets/home/mobile/image-hero-coffeepress.jpg';
 import tabHeroImg from '../../../assets/home/tablet/image-hero-coffeepress.jpg'
 import dskHeroImg from '../../../assets/home/desktop/image-hero-coffeepress.jpg'
 
 // about hero images
 import aboutMobileHeroImg from '../../../assets/about/mobile/image-hero-whitecup.jpg';
+import aboutTabHeroImg from '../../../assets/about/tablet/image-hero-whitecup.jpg';
+import aboutDesktopHeroImg from '../../../assets/about/desktop/image-hero-whitecup.jpg';
+
+// 
+// general hero styling
 
 export const StyledHero = styled.div`
     display: flex;
@@ -91,10 +98,19 @@ export const StyledHomeHero = styled(StyledHero)`
     }
 `
 
-// hero for other pages
-export const StyledOtherHero = styled(StyledHero)`
+// hero for About page
+export const StyledAboutHero = styled(StyledHero)`
     .bg-box {
         height: 25rem;
         background-image: url(${aboutMobileHeroImg});
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.tablet}) {
+            background-image: url(${aboutTabHeroImg});
+        }
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.desktop}) {
+            height: 28.125rem;
+            background-image: url(${aboutDesktopHeroImg});
+        }
     }
 `
