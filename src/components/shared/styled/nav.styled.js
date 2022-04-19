@@ -20,7 +20,26 @@ export const StyledNav = styled.nav`
 
 export const StyledHeaderNav = styled(StyledNav)`
     @media only screen and (max-width: ${({theme}) => theme.screen.tablet}) {
-        display: none;
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+        position: fixed;
+        top: 80px;
+        width: 100vw;
+        height: 50vh;
+        
+        ul {
+            margin-top: 5rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            
+            li {
+                color: ${({theme}) => theme.color.greyBlue};
+                text-transform: capitalize;
+                font-family: 'Fraunces', serif;
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+        }
     }
 
 `
