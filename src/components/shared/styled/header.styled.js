@@ -22,7 +22,7 @@ export const StyledHeader = styled.header`
 
         .toggle {
             grid-area: b;
-            margin-right: auto;
+            margin-left: auto;
         }
 
         .header-nav {
@@ -36,6 +36,14 @@ export const StyledHeader = styled.header`
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        .toggle {
+            display: none;
+        }
+
+        .header-nav {
+            display: block !important;
+        }
     }
 
     @media only screen and (min-width: ${({theme}) => theme.screen.desktop}) {

@@ -24,7 +24,7 @@ export const StyledHeaderNav = styled(StyledNav)`
         position: fixed;
         top: 80px;
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
         
         ul {
             margin-top: 5rem;

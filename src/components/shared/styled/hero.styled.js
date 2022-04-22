@@ -10,7 +10,12 @@ import aboutMobileHeroImg from '../../../assets/about/mobile/image-hero-whitecup
 import aboutTabHeroImg from '../../../assets/about/tablet/image-hero-whitecup.jpg';
 import aboutDesktopHeroImg from '../../../assets/about/desktop/image-hero-whitecup.jpg';
 
-// 
+// plan hero images
+import planMobileHeroImg from '../../../assets/plan/mobile/image-hero-blackcup.jpg'
+import planTabletHeroImg from '../../../assets/plan/tablet/image-hero-blackcup.jpg'
+import planDesktopHeroImg from '../../../assets/plan/desktop/image-hero-blackcup.jpg'
+
+
 // general hero styling
 
 export const StyledHero = styled.div`
@@ -111,6 +116,23 @@ export const StyledAboutHero = styled(StyledHero)`
         @media only screen and (min-width: ${({theme}) => theme.screen.desktop}) {
             height: 28.125rem;
             background-image: url(${aboutDesktopHeroImg});
+        }
+    }
+`
+
+// hero for Plan page
+export const StyledPlanHero = styled(StyledHero)`
+    .bg-box {
+        height: 25rem;
+        background-image: url(${planMobileHeroImg});
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.tablet}) {
+            background-image: url(${planTabletHeroImg});
+        }
+
+        @media only screen and (min-width: ${({theme}) => theme.screen.desktop}) {
+            height: 28.125rem;
+            background-image: url(${planDesktopHeroImg});
         }
     }
 `

@@ -16,6 +16,7 @@ export const StyledProcess = styled.div`
         h2 {
             font-size: 4.5rem;
             text-align: center;
+            color: ${({theme}) => theme.color.orange};
         }
 
         h4 {
@@ -56,9 +57,12 @@ export const StyledProcessHome = styled(StyledProcess)`
     div {
         color: ${({theme}) => theme.color.greyBlue};
     }
-
-    h2 {
-        color: ${({theme}) => theme.color.orange};
-    }
 `
 
+// variation for the homepage
+
+export const StyledProcessPlan = styled(StyledProcess)`
+    h4, p {
+        color: ${({theme}) => theme.color.lightCream};
+    }
+`
