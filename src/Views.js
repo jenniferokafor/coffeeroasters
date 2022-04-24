@@ -8,7 +8,7 @@ export default function  Views () {
         <Routes>
             <Route index element={<Home />} />
             <Route path='/about' element={<About />}/>
-            <Route path='plan' element={<Plan />}/>
+            <Route path='/plan' element={<Plan />}/>
         </Routes>
     )
 }
