@@ -2,6 +2,7 @@ export default [
     {   
         id: 1,
         title: 'How do you drink your coffee?', 
+        name: 'drinkStyle',
         info: [
             {
                 id: 1,
@@ -23,6 +24,7 @@ export default [
     {
         id: 2,
         title: 'What type of coffee?', 
+        name: 'coffeeType',
         info: [
             {
                 id: 1,
@@ -44,6 +46,7 @@ export default [
     {
         id: 3,
         title: 'How much would you like?', 
+        name: 'amount',
         info: [
             {
                 id: 1,
@@ -65,6 +68,7 @@ export default [
     {
         id: 4,
         title: 'Want us to grind them?', 
+        name: 'grind',
         info: [
             {
                 id: 1,
@@ -86,6 +90,7 @@ export default [
     {   
         id: 5,
         title: 'How often should we deliver?', 
+        name: 'delivery',
         info: [
             {
                 id: 1,

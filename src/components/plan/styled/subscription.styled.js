@@ -12,43 +12,59 @@ export const StyledSubscription = styled.div`
     }
 `
 
-export const StyledOptions = styled.div`
+export const StyledForm = styled.form`
         display: flex;
         flex-direction: column;
         gap: 2rem;
 
-            .options-header {
+            .legend-wrapper {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: 1.125rem;
 
-                h2 {
+                legend {
                     font-size: 1.5rem;
                     color: ${({theme}) => theme.color.grey};
                 }
             }
 
-            .options-selection {
+            input[type='radio'] {
+                opacity: 0;
+                position: fixed;
+                width: 0;
+            }
+
+            label {
                 background-color: rgba(244, 241, 235, 1);
                 color: ${({theme}) => theme.color.greyBlue};
                 border-radius: 8px;
                 padding: 1.5rem;
-                
+                display: flex;
+                flex-direction: column;
+                gap: 0.2rem;
+                cursor: pointer;
 
                 &:hover {
-                        background-color: ${({theme}) => theme.color.cyan};
-                        color: ${({theme}) => theme.color.lightCream};
+                        background-color: ${({theme}) => theme.color.orange};
                     }
 
-                h4 {
+                .type {
+                    font-family: 'Fraunces', serif;
+                    font-weight: 900;
                     font-size: 1.5rem;
-                    margin-bottom: 0.75rem;
                 }
 
-                p {
+                .description {
+                    font-family: 'Barlow', sans-serif;
                     font-size: 1rem;
 		            line-height: 1.625rem;
                 }
+            }
+
+            input[type='radio']:checked + label {
+                background-color: ${({theme}) => theme.color.cyan};
+                color: ${({theme}) => theme.color.lightCream};
             }
 `
